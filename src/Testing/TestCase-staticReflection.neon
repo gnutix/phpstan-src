@@ -3,6 +3,7 @@ services:
 		class: PHPStan\Testing\TestCaseSourceLocatorFactory
 		arguments:
 			phpParser: @phpParserDecorator
+			phpstormStubsSourceStubber: @phpStormStubsSourceStubber
 
 	testCaseBetterReflectionProvider:
 		class: PHPStan\Reflection\BetterReflection\BetterReflectionProvider
